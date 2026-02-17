@@ -13,9 +13,9 @@ export function MyAwesomeApp() {
 
     return (
         <>
-            <h1>{name}</h1>
-            <p style={myStyles}>{last_name}</p>
-            <ul>
+            <h1 data-testid="heading-name">{name}</h1>
+            <p data-testid="heading-last_name" style={myStyles}>{last_name}</p>
+            <ul data-testid="favoriteGames">
                 {favoriteGames.map((game, index) => (
                     <li key={index}>{game}</li>
                 ))}

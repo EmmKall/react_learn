@@ -1,0 +1,30 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MyAwesomeApp > Should match snapshot 1`] = `
+<div>
+  <h1
+    data-testid="heading-name"
+  >
+    Emm
+  </h1>
+  <p
+    data-testid="heading-last_name"
+    style="color: red; font-weight: bold;"
+  >
+    Calderon
+  </p>
+  <ul
+    data-testid="favoriteGames"
+  >
+    <li>
+      GTA
+    </li>
+    <li>
+      FIFA
+    </li>
+    <li>
+      Minecraft
+    </li>
+  </ul>
+</div>
+`;

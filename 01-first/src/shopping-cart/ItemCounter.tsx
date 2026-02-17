@@ -7,7 +7,7 @@ interface ItemCounterProps {
     quantity: number;
 }
 
-export const ItemCounter = ({ productName, quantity }: ItemCounterProps) => {
+export const ItemCounter = ({ productName, quantity = 1 }: ItemCounterProps) => {
 
     const [counter, setCounter] = useState(quantity);
 
@@ -33,14 +33,16 @@ export const ItemCounter = ({ productName, quantity }: ItemCounterProps) => {
 
     return (
         <>
-            <h1>{productName}</h1>
-            {/* <div className="item-counter"> */}
-            <div className={styles['item-counter']}>
-                <button onClick={() => handleClick('remove')}>-1</button>
-                <p
-                    style={{ color: counter > 5 ? 'green' : 'red' }}
-                >{counter}</p>
-                <button onClick={() => handleClick('add')}>+1</button>
+            <div>
+                <h1>{productName}</h1>
+                {/* <div className="item-counter"> */}
+                <div className={styles['item-counter']}>
+                    <button onClick={() => handleClick('remove')}>-1</button>
+                    <p
+                        style={{ color: counter > 5 ? 'green' : 'red' }}
+                    >{counter}</p>
+                    <button onClick={() => handleClick('add')}>+1</button>
+                </div>
             </div>
         </>
     )
